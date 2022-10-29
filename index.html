@@ -16,7 +16,7 @@
 
 <!--Header-->
 <header class="header">
-    <div class="header-container container"> 
+    <div class="site-nav-list container"> 
         <a href="./index.html" class="logo-link link">Web<span class="logo-accent-black">Studio</span></a>
         <nav class="header-navigation">
             <ul class="site-nav-list list ">
@@ -48,7 +48,7 @@
     <section class="hero"> 
         <div class="container">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="button">Замовити послугу</button>
+            <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
     </section>
 <!--Benefits-->
@@ -95,19 +95,44 @@
             </ul>
         </div>
     </section>
-<!--Examples -->
+<!--What are we doing -->
     <section class="examples">
         <div class="container"> 
             <h2 class="examples-title">Чим ми займаємося</h2>
             <ul class="examples-ul list">
                 <li class="examples-image">
-                    <img src="./images/img1.jpeg" alt="Робочий стіл, мишка та планшет. Виконання технічного завдання." width="370">
+                    <div class="examples-products">
+                        <img src="./images/img1.jpeg" 
+                        alt="Робочий стіл, мишка та планшет. Виконання технічного завдання." 
+                        width="370">
+
+                        <div class="examples-head-wrap">
+                            <h3 class="examples-head">Десктопні додатки</h3>
+                        </div>
+                    </div>
                 </li>
                 <li class="examples-image">
-                    <img src="./images/img2.jpeg" alt="Людина за комп'ютером. Тримає у руці планшет. Адаптивність." width="370">
+                    <div class="examples-products"> 
+                        <img src="./images/img2.jpeg" 
+                        alt="Людина за комп'ютером. Тримає у руці планшет. Адаптивність." 
+                        width="370">
+
+                        <div class="examples-head-wrap">
+                            <h3 class="examples-head">Мобільні додатки</h3>
+                        </div>
+                    </div>                
                 </li>
                 <li class="examples-image">
-                    <img src="./images/img3.jpeg" alt="Людина за комп'ютером. Тримає у руці планшет. Оптимізація дизайну." width="370">
+                    <div class="examples-products"> 
+                        <img src="./images/img3.jpeg" 
+                        alt="Людина за комп'ютером. Тримає у руці планшет. Оптимізація дизайну." 
+                        width="370">                    
+
+                        <div class="examples-head-wrap">
+                            <h3 class="examples-head">Дизайнерські рішення</h3>
+                        </div>
+                    </div>
+
                     </li>
             </ul>
         </div>
@@ -435,6 +460,20 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+            <svg class="modal-close-icon" width="18" height="18">
+            <use href="./images/#icon-close(1)" ></use>
+            </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>
+
+
 
