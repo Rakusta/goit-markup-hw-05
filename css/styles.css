@@ -592,11 +592,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-.team-soc-link{
     fill:var(--team-soc-item-color);
-
     transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
@@ -648,18 +645,18 @@ body{
 .clients-link:hover,
 .clients-link:focus {
     border: 1px solid;
-    border-color: var (--logo-blue-color); 
-    
 
 }
 
 .clints-soc-icon{
+    transition: fill 250ms var(--timing-function);
 
 }
 
 .clients-link:hover, 
 .clients-link:focus .clints-soc-icon{
-    fill: var(--logo-blue-color)
+    fill: var(--logo-blue-color);
+    border-color: var(--logo-blue-color);
 }
 
 /*--------------MODAL WINDOW----------- */
